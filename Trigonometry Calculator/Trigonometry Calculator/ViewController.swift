@@ -32,6 +32,5 @@ class ViewController: UIViewController {
         print ("Calculate Botton Pressed")
         
     }
-hellloooooo
 }
 
