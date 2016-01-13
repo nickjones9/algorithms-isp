@@ -38,6 +38,12 @@ class ViewController: UIViewController {
         var b = SidebTextField
         var c = SidecTextField
         
+        print (A)
+        print (B)
+        print (C)
+        print (a)
+        print (b)
+        print (c)
     }
 }
 
