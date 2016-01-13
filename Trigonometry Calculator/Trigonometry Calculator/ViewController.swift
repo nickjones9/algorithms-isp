@@ -42,6 +42,10 @@ class ViewController: UIViewController {
         print (a)
         print (b)
         print (c)
+        
+//        if (A > 0){
+//            print("A has value")
+//        }
     }
 }
 
