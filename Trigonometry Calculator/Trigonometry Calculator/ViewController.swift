@@ -31,12 +31,12 @@ class ViewController: UIViewController {
         
         print ("Calculate Botton Pressed")
         
-        var A = AngleATextField
-        var B = AngleBTextField
+        var A = AngleATextField.text
+        var B = AngleBTextField.text
         var C = 90
-        var a = SideaTextField
-        var b = SidebTextField
-        var c = SidecTextField
+        var a = SideaTextField.text
+        var b = SidebTextField.text
+        var c = SidecTextField.text
         
         print (A)
         print (B)
