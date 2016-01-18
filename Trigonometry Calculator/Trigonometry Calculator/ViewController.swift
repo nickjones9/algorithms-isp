@@ -112,7 +112,6 @@ class ViewController: UIViewController {
             print (B)
             a = b * tan(A)
             print (a)
-            //            b = b * π / 180.0
             c = sqrt((a*a) + (b*b))
             print (c)
 
@@ -124,7 +123,6 @@ class ViewController: UIViewController {
             print (B)
             a = c * sin(A)
             print (a)
-            //            b = b * π / 180.0
             b = sqrt((c*c) - (a*a))
             print (b)
 
@@ -136,7 +134,6 @@ class ViewController: UIViewController {
             print (A)
             b = a * tan(B)
             print (b)
-            //            b = b * π / 180.0
             c = sqrt((a*a) + (b*b))
             print (c)
 
@@ -148,7 +145,6 @@ class ViewController: UIViewController {
             print (A)
             a = b / tan(B)
             print (a)
-            //            b = b * π / 180.0
             c = sqrt((a*a) + (b*b))
             print (c)
         }
@@ -159,23 +155,39 @@ class ViewController: UIViewController {
             print (A)
             b = c * sin(B)
             print (b)
-            //            b = b * π / 180.0
             a = sqrt((c*c) - (b*b))
             print (a)
         }
         
         if sidea == true && sideb == true {
             print ("Taking route ab")
-            
+            c = sqrt ((a*a) + (b*b))
+            print (c)
+            B = sin(b / c)
+            print (B)
+            A = sin(a / c)
+            print(A)
         }
         
         if sideb == true && sidec == true {
             print ("Taking route bc")
+            a = sqrt ((c*c) - (b*b))
+            print (a)
+            B = sin(b / c)
+            print (B)
+            A = sin(a / c)
+            print(A)
             
         }
         
         if sidea == true && sidec == true {
             print ("Taking route ac")
+            b = sqrt ((c*c) - (a*a))
+            print (b)
+            B = sin(b / c)
+            print (B)
+            A = sin(a / c)
+            print(A)
             
         }
         
