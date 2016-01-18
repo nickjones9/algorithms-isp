@@ -7,8 +7,17 @@
 //
 
 import UIKit
+import Darwin
 
-extension String {                                                 // Creating an extention to let textfield be named a float value
+let π = Float(M_PI)
+
+var angleA = false                                                 // Naming boolean variables to show which measurnments are declaired
+var angleB = false
+var sidea = false
+var sideb = false
+var sidec = false
+
+extension String {                                                 // Creating an extention to let textfield be named as a float value
     var floatValue: Float {
         return (self as NSString).floatValue
     }
@@ -37,48 +46,144 @@ class ViewController: UIViewController {
         
         var A = AngleATextField.text!.floatValue                   // Naming the Angles and giving them inserted values
         var B = AngleBTextField.text!.floatValue
-        var C = 90
+        var C = Float(90.0)
         var a = SideaTextField.text!.floatValue                    // Naming the Sides and giving them inserted values
         var b = SidebTextField.text!.floatValue
         var c = SidecTextField.text!.floatValue
         
-//        print (A)                                                  // Printing values in computer
-//        print (B)
-//        print (C)
-//        print (a)
-//        print (b)
-//        print (c)
+        print (A)                                                  // Printing values in computer
+        print (B)
+        print (C)
+        print (a)
+        print (b)
+        print (c)
         
         
-        if (A > 0){
+        if (A > 0){                                                // Checking which measurnments have been declaired
             print("A has been declaired")
+            angleA = true
         } else {
             print ("A was not declaired")
         }
         
         if (B > 0){
             print("B has been declaired")
+            angleB = true
         } else {
             print ("B was not declaired")
         }
         
         if (a > 0){
             print("a has been declaired")
+            sidea = true
         } else {
             print ("a was not declaired")
         }
         
         if (b > 0){
             print("b has been declaired")
+            sideb = true
         } else {
             print ("b was not declaired")
         }
+        
         if (c > 0){
             print("c has been declaired")
+            sidec = true
         } else {
             print ("c was not declaired")
         }
         
+        if sidea == true && angleA == true {                       // Possible routes to take
+            print ("Taking route Aa")
+            B = 180 - (C + A)
+            print (B)
+            b = a / tan(A)
+            print (b)
+//            b = b * π / 180.0
+            c = sqrt((a*a) + (b*b))
+            print (c)
+            
+        }
+        
+        if sideb == true && angleA == true {
+            print ("Taking route Ab")
+            B = 180 - (C + A)
+            print (B)
+            a = b * tan(A)
+            print (a)
+            //            b = b * π / 180.0
+            c = sqrt((a*a) + (b*b))
+            print (c)
+
+        }
+        
+        if sidec == true && angleA == true {
+            print ("Taking route Ac")
+            B = 180 - (C + A)
+            print (B)
+            a = c * sin(A)
+            print (a)
+            //            b = b * π / 180.0
+            b = sqrt((c*c) - (a*a))
+            print (b)
+
+        }
+        
+        if sidea == true && angleB == true {
+            print ("Taking route Ba")
+            A = 180 - (C + B)
+            print (A)
+            b = a * tan(B)
+            print (b)
+            //            b = b * π / 180.0
+            c = sqrt((a*a) + (b*b))
+            print (c)
+
+        }
+        
+        if sideb == true && angleB == true {
+            print ("Taking route Bb")
+            A = 180 - (C + B)
+            print (A)
+            a = b / tan(B)
+            print (a)
+            //            b = b * π / 180.0
+            c = sqrt((a*a) + (b*b))
+            print (c)
+        }
+        
+        if sidec == true && angleB == true {
+            print ("Taking route Bc")
+            A = 180 - (C + B)
+            print (A)
+            b = c * sin(B)
+            print (b)
+            //            b = b * π / 180.0
+            a = sqrt((c*c) - (b*b))
+            print (a)
+        }
+        
+        if sidea == true && sideb == true {
+            print ("Taking route ab")
+            
+        }
+        
+        if sideb == true && sidec == true {
+            print ("Taking route bc")
+            
+        }
+        
+        if sidea == true && sidec == true {
+            print ("Taking route ac")
+            
+        }
+        
+        
     }
+    
+    // If clear button pressed
+    // All = 0
+    
 }
 
