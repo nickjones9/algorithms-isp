@@ -1,4 +1,4 @@
-//  Nick Jonwa
+//  Nick Jones
 //  ViewController.swift
 //  Trigonometry Calculator
 //
