@@ -96,67 +96,87 @@ class ViewController: UIViewController {
         
         if sidea == true && angleA == true {                       // Possible routes to take
             print ("Taking route Aa")
-            B = 180 - (C + A)
+            B = 180 - (C + A)                                      // 180 - Sum of all angles
+            B = B * π / 180.0                                      // Convert to radian
+            A = A * π / 180.0
             print (B)
-            b = a / tan(A)
+            b = a / tan(A)                                         // Solve with trig - Tangent
             print (b)
-//            b = b * π / 180.0 // This is the dec to rad convertion that doesnt work on final products, needs to be used in actual equation.
-            c = sqrt((a*a) + (b*b))
+            c = sqrt((a*a) + (b*b))                                // Pythagorean theorem
             print (c)
-            
+            B = B * 180 / π                                        // Convert back to degree
+            A = A * 180 / π
         }
         
         if sideb == true && angleA == true {
             print ("Taking route Ab")
             B = 180 - (C + A)
+            B = B * π / 180.0
+            A = A * π / 180.0
             print (B)
             a = b * tan(A)
             print (a)
             c = sqrt((a*a) + (b*b))
             print (c)
-
+            B = B * 180 / π
+            A = A * 180 / π
         }
         
         if sidec == true && angleA == true {
             print ("Taking route Ac")
             B = 180 - (C + A)
+            B = B * π / 180.0
+            A = A * π / 180.0
             print (B)
             a = c * sin(A)
             print (a)
             b = sqrt((c*c) - (a*a))
             print (b)
-
+            B = B * 180 / π
+            A = A * 180 / π
         }
         
         if sidea == true && angleB == true {
             print ("Taking route Ba")
             A = 180 - (C + B)
+            B = B * π / 180.0
+            A = A * π / 180.0
             print (A)
             b = a * tan(B)
             print (b)
             c = sqrt((a*a) + (b*b))
             print (c)
+            B = B * 180 / π
+            A = A * 180 / π
 
         }
         
         if sideb == true && angleB == true {
             print ("Taking route Bb")
             A = 180 - (C + B)
+            B = B * π / 180.0
+            A = A * π / 180.0
             print (A)
             a = b / tan(B)
             print (a)
             c = sqrt((a*a) + (b*b))
             print (c)
+            B = B * 180 / π
+            A = A * 180 / π
         }
         
         if sidec == true && angleB == true {
             print ("Taking route Bc")
             A = 180 - (C + B)
+            B = B * π / 180.0
+            A = A * π / 180.0
             print (A)
             b = c * sin(B)
             print (b)
             a = sqrt((c*c) - (b*b))
             print (a)
+            B = B * 180 / π
+            A = A * 180 / π
         }
         
         if sidea == true && sideb == true {
@@ -177,7 +197,6 @@ class ViewController: UIViewController {
             print (B)
             A = sin(a / c)
             print(A)
-            
         }
         
         if sidea == true && sidec == true {
