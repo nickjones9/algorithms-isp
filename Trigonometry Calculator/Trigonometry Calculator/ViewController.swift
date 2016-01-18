@@ -192,7 +192,7 @@ class ViewController: UIViewController {
         }
         
         // Alert
-        let alertController = UIAlertController(title: "Triangle Calculated", message: "Calculations...", preferredStyle: UIAlertControllerStyle.Alert)
+        let alertController = UIAlertController(title: "Triangle Calculated", message: "A = \(A)˚ B = \(B)˚ C = 90˚ a = \(a) b = \(b) c = \(c)", preferredStyle: UIAlertControllerStyle.Alert)
                 alertController.addAction(UIAlertAction(title: "Clear", style: UIAlertActionStyle.Default) {
                   UIAlertAction in
                     self.alertClear()
