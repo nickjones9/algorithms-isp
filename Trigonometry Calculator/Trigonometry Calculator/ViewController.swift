@@ -100,7 +100,7 @@ class ViewController: UIViewController {
             print (B)
             b = a / tan(A)
             print (b)
-//            b = b * π / 180.0
+//            b = b * π / 180.0 // This is the dec to rad convertion that doesnt work on final products, needs to be used in actual equation.
             c = sqrt((a*a) + (b*b))
             print (c)
             
@@ -191,6 +191,7 @@ class ViewController: UIViewController {
             
         }
         
+        // Alert
         let alertController = UIAlertController(title: "Triangle Calculated", message: "Calculations...", preferredStyle: UIAlertControllerStyle.Alert)
                 alertController.addAction(UIAlertAction(title: "Clear", style: UIAlertActionStyle.Default) {
                   UIAlertAction in
@@ -210,11 +211,11 @@ class ViewController: UIViewController {
         
             }
     
-        func alertClear() {
+        func alertClear() {                                        // Clear Button Function
                 print("alert CLEAR")
             }
     
-        func alertEdit() {
+        func alertEdit() {                                         // Edit Button Function
             print("alert EDIT")
             }
         
