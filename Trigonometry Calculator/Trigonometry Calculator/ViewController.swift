@@ -191,11 +191,32 @@ class ViewController: UIViewController {
             
         }
         
+        let alertController = UIAlertController(title: "Triangle Calculated", message: "Calculations...", preferredStyle: UIAlertControllerStyle.Alert)
+                alertController.addAction(UIAlertAction(title: "Clear", style: UIAlertActionStyle.Default) {
+                  UIAlertAction in
+                    self.alertClear()
+        
+                })
+        
+                alertController.addAction(UIAlertAction(title: "Edit", style: UIAlertActionStyle.Default) {
+                UIAlertAction in
+                    self.alertEdit()
+    
+                    })
+        
+        
+        
+                self.presentViewController(alertController, animated: true, completion: nil)
+        
+            }
+    
+        func alertClear() {
+                print("alert CLEAR")
+            }
+    
+        func alertEdit() {
+            print("alert EDIT")
+            }
         
     }
-    
-    // If clear button pressed
-    // All = 0
-    
-}
 
