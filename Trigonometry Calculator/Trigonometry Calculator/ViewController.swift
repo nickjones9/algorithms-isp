@@ -46,7 +46,7 @@ class ViewController: UIViewController {
         
         var A = AngleATextField.text!.floatValue                   // Naming the Angles and giving them inserted values
         var B = AngleBTextField.text!.floatValue
-        let C = Float(90.0)
+        var C = Float(90.0)
         var a = SideaTextField.text!.floatValue                    // Naming the Sides and giving them inserted values
         var b = SidebTextField.text!.floatValue
         var c = SidecTextField.text!.floatValue
@@ -184,8 +184,9 @@ class ViewController: UIViewController {
             c = sqrt ((a*a) + (b*b))
             print (c)
             B = sin(b / c)
+            B = B * 180 / π
             print (B)
-            A = sin(a / c)
+            A = 180 - (C + B)
             print(A)
         }
         
