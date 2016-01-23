@@ -97,14 +97,14 @@ class ViewController: UIViewController {
         if sidea == true && angleA == true {                       // Possible routes to take
             print ("Taking route Aa")
             B = 180 - (C + A)                                      // 180 - Sum of all angles
-            B = B * π / 180.0                                      // Convert to radian
+            B = B * π / 180.0                                      // Convert to radians
             A = A * π / 180.0
             print (B)
             b = a / tan(A)                                         // Solve with trig - Tangent
             print (b)
             c = sqrt((a*a) + (b*b))                                // Pythagorean theorem
             print (c)
-            B = B * 180 / π                                        // Convert back to degree
+            B = B * 180 / π                                        // Convert back to degrees
             A = A * 180 / π
         }
         
@@ -183,7 +183,7 @@ class ViewController: UIViewController {
             print ("Taking route ab")
             c = sqrt ((a*a) + (b*b))
             print (c)
-            B = sin(b / c)
+            B = asin(b / c)
             B = B * 180 / π
             print (B)
             A = 180 - (C + B)
@@ -194,9 +194,11 @@ class ViewController: UIViewController {
             print ("Taking route bc")
             a = sqrt ((c*c) - (b*b))
             print (a)
-            B = sin(b / c)
+            B = asin(b / c)
+            B = B * 180 / π
             print (B)
-            A = sin(a / c)
+            A = asin(a / c)
+            A = A * 180 / π
             print(A)
         }
         
@@ -204,9 +206,11 @@ class ViewController: UIViewController {
             print ("Taking route ac")
             b = sqrt ((c*c) - (a*a))
             print (b)
-            B = sin(b / c)
+            B = asin(b / c)
+            B = B * 180 / π
             print (B)
-            A = sin(a / c)
+            A = asin(a / c)
+            A = A * 180 / π
             print(A)
             
         }
