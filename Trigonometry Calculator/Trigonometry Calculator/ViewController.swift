@@ -17,6 +17,13 @@ var sidea = false
 var sideb = false
 var sidec = false
 
+var A = Float(0)                                                   // Naming the Angles and giving them inserted values
+var B = Float(0)
+let C = Float(90.0)
+var a = Float(0)                                                   // Naming the Sides and giving them inserted values
+var b = Float(0)
+var c = Float(0)
+
 extension String {                                                 // Creating an extention to let textfield be named as a float value
     var floatValue: Float {
         return (self as NSString).floatValue
@@ -44,17 +51,25 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    @IBAction func InfoButton(sender: AnyObject) {
+        print("Info button pressed")
+        
+        let alert = UIAlertController(title: "Info", message: "Insert 1 side and 1 angle, or 2 sides.", preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.Default, handler: nil))
+        self.presentViewController(alert, animated: true, completion: nil)
+    }
+
 
     @IBAction func CalculateButton(sender: AnyObject) {            // Connecting Button to code. When it is pressed...
         
         print ("Calculate Botton Pressed")                         // Print message into computer
         
-        var A = AngleATextField.text!.floatValue                   // Naming the Angles and giving them inserted values
-        var B = AngleBTextField.text!.floatValue
-        let C = Float(90.0)
-        var a = SideaTextField.text!.floatValue                    // Naming the Sides and giving them inserted values
-        var b = SidebTextField.text!.floatValue
-        var c = SidecTextField.text!.floatValue
+        A = AngleATextField.text!.floatValue                   // Naming the Angles and giving them inserted values
+        B = AngleBTextField.text!.floatValue
+        a = SideaTextField.text!.floatValue                    // Naming the Sides and giving them inserted values
+        b = SidebTextField.text!.floatValue
+        c = SidecTextField.text!.floatValue
         
         print (A)                                                  // Printing values in computer
         print (B)
@@ -243,11 +258,11 @@ class ViewController: UIViewController {
         func alertClear() {                                        // Clear Button Function
                 print("alert CLEAR")
             
-//            A = 0
-//            B = 0
-//            a = 0
-//            b = 0
-//            c = 0
+            A = 0
+            B = 0
+            a = 0
+            b = 0
+            c = 0
             
             }
     
