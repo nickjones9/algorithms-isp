@@ -55,7 +55,7 @@ class ViewController: UIViewController {
     @IBAction func InfoButton(sender: AnyObject) {
         print("Info button pressed")
         
-        let alert = UIAlertController(title: "Info", message: "Insert 1 side and 1 angle, or 2 sides.", preferredStyle: UIAlertControllerStyle.Alert)
+        let alert = UIAlertController(title: "Info", message: "Insert 1 side and 1 angle, or 2 sides. Must be a right angle triangle", preferredStyle: UIAlertControllerStyle.Alert)
         alert.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.Default, handler: nil))
         self.presentViewController(alert, animated: true, completion: nil)
     }
@@ -257,12 +257,32 @@ class ViewController: UIViewController {
     
         func alertClear() {                                        // Clear Button Function
                 print("alert CLEAR")
+                
+            AngleATextField.text = ""
+            AngleBTextField.text = ""
+            SideaTextField.text = ""
+            SidebTextField.text = ""
+            SidecTextField.text = ""
             
-            A = 0
+            A = 0                                                  // Set all measurnments to 0
             B = 0
             a = 0
             b = 0
             c = 0
+            
+            angleA = false                                         // Set all boolean variables to false
+            angleB = false
+            sidea = false
+            sideb = false
+            sidec = false
+            
+            print (A)                                              // Printing values in computer
+            print (B)
+            print (C)
+            print (a)
+            print (b)
+            print (c)
+            
             
             }
     
