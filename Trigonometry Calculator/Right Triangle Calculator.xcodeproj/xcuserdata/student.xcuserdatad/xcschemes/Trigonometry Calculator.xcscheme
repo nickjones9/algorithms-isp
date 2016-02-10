@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3F11058B1C1B21C900B0C7BC"
-               BuildableName = "Trigonometry Calculator.app"
-               BlueprintName = "Trigonometry Calculator"
-               ReferencedContainer = "container:Trigonometry Calculator.xcodeproj">
+               BuildableName = "Right Triangle Calculator.app"
+               BlueprintName = "Right Triangle Calculator"
+               ReferencedContainer = "container:Right Triangle Calculator.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3F11058B1C1B21C900B0C7BC"
-            BuildableName = "Trigonometry Calculator.app"
-            BlueprintName = "Trigonometry Calculator"
-            ReferencedContainer = "container:Trigonometry Calculator.xcodeproj">
+            BuildableName = "Right Triangle Calculator.app"
+            BlueprintName = "Right Triangle Calculator"
+            ReferencedContainer = "container:Right Triangle Calculator.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3F11058B1C1B21C900B0C7BC"
-            BuildableName = "Trigonometry Calculator.app"
-            BlueprintName = "Trigonometry Calculator"
-            ReferencedContainer = "container:Trigonometry Calculator.xcodeproj">
+            BuildableName = "Right Triangle Calculator.app"
+            BlueprintName = "Right Triangle Calculator"
+            ReferencedContainer = "container:Right Triangle Calculator.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3F11058B1C1B21C900B0C7BC"
-            BuildableName = "Trigonometry Calculator.app"
-            BlueprintName = "Trigonometry Calculator"
-            ReferencedContainer = "container:Trigonometry Calculator.xcodeproj">
+            BuildableName = "Right Triangle Calculator.app"
+            BlueprintName = "Right Triangle Calculator"
+            ReferencedContainer = "container:Right Triangle Calculator.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

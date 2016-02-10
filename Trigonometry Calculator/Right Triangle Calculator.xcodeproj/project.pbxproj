@@ -15,7 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3F11058C1C1B21C900B0C7BC /* Trigonometry Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Trigonometry Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F11058C1C1B21C900B0C7BC /* Right Triangle Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Right Triangle Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F11058F1C1B21C900B0C7BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F1105911C1B21C900B0C7BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3F1105941C1B21C900B0C7BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -46,7 +46,7 @@
 		3F11058D1C1B21C900B0C7BC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3F11058C1C1B21C900B0C7BC /* Trigonometry Calculator.app */,
+				3F11058C1C1B21C900B0C7BC /* Right Triangle Calculator.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,9 +67,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3F11058B1C1B21C900B0C7BC /* Trigonometry Calculator */ = {
+		3F11058B1C1B21C900B0C7BC /* Right Triangle Calculator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3F11059E1C1B21CA00B0C7BC /* Build configuration list for PBXNativeTarget "Trigonometry Calculator" */;
+			buildConfigurationList = 3F11059E1C1B21CA00B0C7BC /* Build configuration list for PBXNativeTarget "Right Triangle Calculator" */;
 			buildPhases = (
 				3F1105881C1B21C900B0C7BC /* Sources */,
 				3F1105891C1B21C900B0C7BC /* Frameworks */,
@@ -79,9 +79,9 @@
 			);
 			dependencies = (
 			);
-			name = "Trigonometry Calculator";
+			name = "Right Triangle Calculator";
 			productName = "Trigonometry Calculator";
-			productReference = 3F11058C1C1B21C900B0C7BC /* Trigonometry Calculator.app */;
+			productReference = 3F11058C1C1B21C900B0C7BC /* Right Triangle Calculator.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -99,7 +99,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3F1105871C1B21C900B0C7BC /* Build configuration list for PBXProject "Trigonometry Calculator" */;
+			buildConfigurationList = 3F1105871C1B21C900B0C7BC /* Build configuration list for PBXProject "Right Triangle Calculator" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -112,7 +112,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3F11058B1C1B21C900B0C7BC /* Trigonometry Calculator */,
+				3F11058B1C1B21C900B0C7BC /* Right Triangle Calculator */,
 			);
 		};
 /* End PBXProject section */
@@ -252,7 +252,7 @@
 				INFOPLIST_FILE = "Trigonometry Calculator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.NJones.Trigonometry-Calculator";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Right Triangle Calculator";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -264,7 +264,7 @@
 				INFOPLIST_FILE = "Trigonometry Calculator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.NJones.Trigonometry-Calculator";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Right Triangle Calculator";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -272,7 +272,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3F1105871C1B21C900B0C7BC /* Build configuration list for PBXProject "Trigonometry Calculator" */ = {
+		3F1105871C1B21C900B0C7BC /* Build configuration list for PBXProject "Right Triangle Calculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3F11059C1C1B21CA00B0C7BC /* Debug */,
@@ -281,7 +281,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3F11059E1C1B21CA00B0C7BC /* Build configuration list for PBXNativeTarget "Trigonometry Calculator" */ = {
+		3F11059E1C1B21CA00B0C7BC /* Build configuration list for PBXNativeTarget "Right Triangle Calculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3F11059F1C1B21CA00B0C7BC /* Debug */,
